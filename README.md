@@ -10,13 +10,13 @@ A comprehensive platform with **39+ specialized AI agents** for **software devel
 
 Built to make GitHub Copilot in VSCode more powerful and accessible for daily development tasks without documentation lookup or complex prompts.
 
-**🎯 Smart Token Management**: Only 2 agents active by default (90%+ token savings). AGENTS.md system loads others automatically by context and semantic detection.
+- **🎯 Smart Token Management**: Only 2 agents active by default (90%+ token savings). 35 agents load automatically via AGENTS.md by context and semantic detection.
 
-**Version 2.1**: 6-category architecture (QA, Dev, Shared, Infrastructure, Security, System) + new Specification Agent  
+**Version 2.1**: 6-category architecture (QA, Dev, Shared, Infrastructure, Security, System)  
 
 **For**: Developers, QA Engineers, DevOps, Architects  
 **Languages**: Python, Java, JavaScript/TypeScript, Go, .NET, and QA test frameworks  
-**Status**: ✅ 39 agents production-ready (83% of v1.0-v2.1 roadmap)
+**Status**: ✅ 35 agents production-ready (v1.0 complete, v2.1 foundation)
 
 ## 🎯 Vision
 
@@ -30,7 +30,7 @@ Transform your **QA + Development workflow** with intelligent agents that handle
 
 ### Key Features
 
-- **🤖 23 Specialized Agents**: Each focused on specific QA/DevOps tasks
+- **🤖 35 Specialized Agents**: Multi-language support (QA, Dev, Shared, System)
 - **💬 Chat-Based Control**: Execute via natural language in VSCode
 - **🧠 Semantic Detection**: Universal Helper understands intent beyond keywords ("analisar código" → auto-loads code review)
 - **⚡ Auto-Activation**: All agents activate automatically when you mention relevant keywords (no manual loading needed)
@@ -47,37 +47,35 @@ Transform your **QA + Development workflow** with intelligent agents that handle
 
 ## 📦 Agent Categories (39 Total - v2.1)
 
-### 🎯 QA Agents (11 - QA Only)
+### 🎯 QA Agents (9 - QA Only)
 **Status**: ✅ v1.0 Production Ready
 
-- **🔄 Migration** (7): Karate↔Robot, Selenium→Playwright, Cypress→Playwright, Jest→Vitest, Postman→Robot/Karate
+- **🔄 Migration** (5): Karate↔Robot core conversion engine
 - **🧪 Test Strategy** (2): Organization, analysis, tagging, coverage
 - **🤖 Frameworks** (2): Robot Framework, Karate DSL templates
-- **🏗️ Scaffold** (1): Complete test project structures (API, UI, Hybrid)
 
-**Location**: `.github/agents/qa/`
+**Location**: `.github/agents/qa/` (9 agents)
 
-### 💻 Dev Agents (16 - Dev Only)
-**Status**: ✅ v2.1 Production Ready (NEW!)
+### 💻 Dev Agents (14 - Dev Only)
+**Status**: ✅ v2.1 Production Ready
 
 - **🐍 Python** (4): Code Generator, Refactoring, Migration, Linter/Type Checker
 - **🐹 Go** (3): Code Generator, Concurrency, Performance
 - **🔷 .NET** (3): Code Generator, EF Core, ASP.NET Patterns
 - **🟨 JavaScript/TypeScript** (3): Code Generator, TypeScript, Performance
-- **☕ Java** (2): Code Generator, Spring Patterns
 - **🔄 Generic** (2): Language Migration, Architecture Analyzer
 
-**Location**: `.github/agents/dev/`
+**Location**: `.github/agents/dev/` (14 agents)
 
-### 🔄 Shared Agents (9 - QA + Dev)
+### 🔄 Shared Agents (8 - QA + Dev)
 **Status**: ✅ v1.0 Production Ready
 
 - **👁️ Code Review** (4): Quality, Security, Data Validation, Performance
 - **📖 Documentation** (1): README, Guides, API Docs, Reports
 - **📊 Reporting** (1): Dashboards, Metrics, Allure Integration
-- **🚀 DevOps** (3): CI/CD Validator, Issue Templates, Repo Setup
+- **🚀 DevOps** (2): CI/CD Validator, Repo Setup
 
-**Location**: `.github/agents/shared/`
+**Location**: `.github/agents/shared/` (8 agents)
 
 ### 🏗️ Infrastructure Agents (6 - Planned)
 **Status**: 🔜 v1.5 Q2 2026 (Awaiting Confirmation)
@@ -103,15 +101,7 @@ Transform your **QA + Development workflow** with intelligent agents that handle
 - **🤖 Universal Helper**: Semantic intent detection + category-based routing
 - **📋 Specification Agent**: Interactive 5-phase PRD + Architecture generator
 
-**Location**: `.github/agents/system/`
-
-### 🤖 System Agents (2 - Always Active)
-**Status**: ✅ v1.0 + v2.1 (Complete)
-
-- **🎯 Universal Helper** - Semantic intent detection + auto-routing
-- **📋 Specification Agent** (NEW!) - PRD + Architecture Design generation
-
-**Location**: `.github/agents/system/`
+**Location**: `.github/agents/system/` (2 agents)
 
 ---
 

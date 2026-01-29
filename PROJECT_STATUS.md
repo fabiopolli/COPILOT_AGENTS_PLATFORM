@@ -251,14 +251,14 @@ Framework Migration Matrix (ANY → ANY)
 
 | Metric | Value |
 |--------|-------|
-| **Total Agents** | 23 |
-| **Auto-Activation Keywords** | 100+ |
+| **Total Agents** | 35 |
+| **Auto-Activation Keywords** | 200+ |
 | **Token Savings** | 90%+ |
 | **Framework Support** | 6+ major frameworks |
 | **CI/CD Platforms** | 3 (GitHub, GitLab, Jenkins) |
 | **Cloud Providers** | 1 (Azure in docs, AWS/GCP planned) |
-| **Migration Paths** | 8 documented + generic support |
-| **Documentation Pages** | 8 |
+| **Dev Languages** | 5 (Python, Go, .NET, JS/TS, and generic) |
+| **Documentation Pages** | 8+ |
 
 ---
 

@@ -13,30 +13,30 @@
 **Arquivo**: `code-generator/agent-prompt.md`
 
 **Responsabilidades**:
-- Gerar classes, interfaces, annotations
+- Gerar classes, interfaces, DTOs com validação
 - Spring Boot services, controllers, repositories
-- Async patterns (CompletableFuture, Reactor)
-- Dependency injection com Spring
-- Stream API e functional programming
-- Record types (Java 16+)
+- Padrões de design (Builder, Factory, Singleton)
+- Builder pattern com validações
+- Documentação JavaDoc completa
+- Exemplos de testes unitários
 
-**Triggers**: `"java"`, `"spring"`, `"criar classe"`, `"implementar service"`
+**Triggers**: `"java"`, `"gerar classe"`, `"criar dto"`, `"builder pattern"`
 
 ---
 
-### 2. Java Spring Patterns
+### 2. Spring Boot Patterns Specialist
 **Arquivo**: `spring-patterns/agent-prompt.md`
 
 **Responsabilidades**:
-- Spring Boot application setup
-- REST controller design
-- Service layer patterns
-- Repository pattern com Spring Data
-- Transaction management
-- Security (Spring Security, JWT)
-- Configuration management
+- Arquitetura Spring Boot completa
+- REST controller design com validação
+- Service layer com transações
+- Repository pattern com Spring Data JPA
+- Spring Security e JWT
+- Exception handling global
+- Configuração de application.yml
 
-**Triggers**: `"spring boot"`, `"spring"`, `"controller"`, `"repository"`
+**Triggers**: `"spring boot"`, `"rest api"`, `"spring security"`, `"jwt"`
 
 ---
 
