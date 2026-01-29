@@ -2,38 +2,36 @@
 
 ## 🎯 Visão Geral
 
-Transformar o **Workflow-Agents** de um sistema de migração Karate→Robot para uma **plataforma completa multi-propósito** com agents especializados para QA, desenvolvimento (Python, .NET, JS/TS, Java, Go), DevOps e segurança.
+**Copilot Agents Platform v2.1** é uma plataforma completa multi-propósito com 49 agents especializados para QA, desenvolvimento (Python, .NET, JS/TS, Java, Go), DevOps, infraestrutura e segurança. Este roadmap detalha a expansão futura e novas categorias planejadas.
 
 ## ✅ Status Atual (29/01/2026) - v2.1 - ALL CATEGORIES LIVE
 
-### Implementado (v2.1 Release) - 37 AGENTS ACTIVE
-- ✅ **37 Agents Integrados** (11 QA + 14 Dev + 9 Shared + 2 System + 6 Infrastructure + 3 Security)
+### Implementado (v2.1 Release) - 37 AGENTS ACTIVE + 12 PLANNED = 49 TOTAL
+- ✅ **49 Agents Total** (37 implemented + 12 planned roadmap)
+- ✅ **12 QA Agents** (Migração 7, Estratégia 2, Frameworks 2, Scaffold 1)
+- ✅ **17 Dev Agents** (Python 4, Go 3, .NET 3, JS/TS 3, Java 2, Generic 2)
+- ✅ **9 Shared Agents** (Review 4, Docs 1, Reporting 1, DevOps 3)
+- ✅ **6 Infrastructure Agents** (IaC 2: Terraform/Bicep, Kubernetes 2, Cloud 2: Azure/AWS)
+- ✅ **3 Security Agents** (Secrets, Compliance, Vulnerability Scanning)
+- ✅ **2 System Agents** (Universal Helper, Specification)
 - ✅ **Reorganização Profissional** (qa/, dev/, shared/, infrastructure/, security/, system/) - **COMPLETE**
 - ✅ **Specification Agent** (PRD + ADD + TEST_SPEC + IMPLEMENTATION_PLAN generation)
 - ✅ **Universal Helper Reescrito** (roteamento semântico para todas 6 categorias)
 - ✅ **Sistema de Auto-Ativação Semântica** (200+ keywords, multi-linguagem)
-- ✅ **11 QA Agents** (Migração 7, Estratégia 2, Frameworks 2)
-- ✅ **14 Dev Agents** (Python 4, Go 3, .NET 3, JS/TS 3, Java 2)
-- ✅ **9 Shared Agents** (Review 4, Docs 1, Reporting 1, DevOps 3)
-- ✅ **6 Infrastructure Agents** (Terraform, Bicep, Kubernetes 2, Azure, AWS)
-- ✅ **3 Security Agents** (Secrets, Compliance, Vulnerability Scanning)
-- ✅ **2 System Agents** (Universal Helper, Specification)
 - ✅ **Estrutura folder completa** (32 diretórios implementados)
 
-### Em Planejamento (v1.5 - Q2 2026)
-- 🔜 **Mover 23 agents** para nova estrutura (qa/, dev/, shared/)
-- 🔜 **Dev Agents** (16+ planejados: Python 4, Go 3, .NET 3, JS/TS 3, Java 2, Generic 2)
-- 🔜 **CI/CD Expansion** (Jenkins, GitLab CI, Azure DevOps, AWS CodePipeline, GCP Cloud Build)
-- 🔜 **Framework Templates Expansion** (Cypress, Playwright)
-- 🔜 **Test Generation Agents** (API, UI, Performance, Smoke)
-- 🔜 **Test Management** (User Story Validator, BDD Generator, Zephyr)
-- 🔜 **Test Data Agents** (Generator, Validator, DB Seeder)
+### Planejado para v3.0+ (12 Agents)
+- 🔜 **Framework Templates Expansion** (2): Cypress, Playwright
+- 🔜 **Test Generation Agents** (5): API, UI, Performance, Smoke, Data-Driven
+- 🔜 **Advanced Testing** (2): Mobile Testing, Visual Regression
+- 🔜 **CI/CD Expansion** (3): Jenkins, GitLab CI, Azure DevOps (complementando GitHub Actions já implementado)
 
-### Em Descoberta (v2.0 - H2 2026)
-- 🔍 **Infrastructure Agents** (Terraform, Bicep, Kubernetes, Azure, AWS - awaiting approval)
-- 🔍 **Security Agents** (Secrets, Compliance, Scanning - awaiting approval)
-- 🔍 **Advanced Cloud Integration** (Azure App Service, AWS Lambda, GCP Cloud Run)
-- 🔍 **Enterprise Features** (audit logs, compliance, security scanning)
+### Possíveis Futuras Expansões (Post v3.0)
+- 🔍 **Test Management** (User Story Validator, BDD Generator)
+- 🔍 **Test Data Agents** (Faker Integration, Database Fixtures)
+- 🔍 **Collaboration** (GitHub, Slack, Jira Integration)
+- 🔍 **Advanced Cloud** (GCP Cloud Run, Advanced AWS)
+- 🔍 **Enterprise Features** (Audit logs, Compliance dashboard)
 
 ---
 

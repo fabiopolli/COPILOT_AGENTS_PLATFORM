@@ -295,6 +295,19 @@ Sua contribuição ajuda a melhorar a plataforma para todos!
 
 ---
 
+## 📧 Contato & Feedback
+
+**👤 Projeto Lead:** Fábio Polli  
+**🔗 LinkedIn**: [Fábio Polli](https://www.linkedin.com/in/fábio-polli/)  
+
+**Como Entrar em Contato:**
+- 📝 Issues no GitHub (bugs, sugestões, feature requests)
+- 💬 LinkedIn DM (discussões, feedback, parcerias)
+- 🔀 Pull Requests (melhorias, novos agents, correções)
+
+---
+
 **Versão**: 1.0  
 **Última Atualização**: 29/01/2026  
+**Status**: Open for Community Contributions  
 **Status**: Open for Community Contributions
