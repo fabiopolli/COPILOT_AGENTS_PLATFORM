@@ -1,313 +1,262 @@
-# 🤖 Copilot Agents Platform
-## Multi-Agent System for Professional Development, QA, and DevOps
+🤖 Copilot Agents Platform
 
-> ⚠️ **THIS IS A DRAFT**  
-> This is not a final product. It's a starting point. A conversation. We need you to criticize it harshly.  
-> All controls are open for discussion. We want disagreement. We want edge cases we haven't considered.  
-> This is not our standard. It's meant to be the community standard, built by the people who actually implement these things.
+Multi-Agent System for Professional Development, QA, and DevOps
 
-A comprehensive platform with **39→49 specialized AI agents** (37 implemented + 12 planned) for **software development, QA automation, DevOps, Infrastructure, Security, and professional workflows** - all controlled via natural language conversation in your IDE.
+⚠️ THIS IS A DRAFT > This is not a final product. It's a starting point. A conversation. We need you to criticize it harshly.
+
+All controls are open for discussion. We want disagreement. We want edge cases we haven't considered.
+
+This is not our standard. It's meant to be the community standard, built by the people who actually implement these things.
+
+A comprehensive platform with 49 specialized AI agents (37 implemented + 12 in active roadmap) for software development, QA automation, DevOps, Infrastructure, Security, and professional workflows - all controlled via natural language conversation in your IDE.
 
 Built to make GitHub Copilot in VSCode more powerful and accessible for daily development tasks without documentation lookup or complex prompts.
 
-- **🎯 Smart Token Management**: Only 2 agents active by default (90%+ token savings). 37 agents (35→37 current) load automatically via AGENTS.md by context and semantic detection.
+🎯 Smart Token Management: Only 2 agents (System) active by default (90%+ token savings). 37 agents load automatically via AGENTS.md by context and semantic detection.
 
-**Version 2.1**: 6-category architecture (QA, Dev, Shared, Infrastructure, Security, System) - **ALL LIVE**  
+⚡ Native Integration: Uses Microsoft's standard chat.useAgentsMdFile for zero-config activation.
 
-**For**: Developers, QA Engineers, DevOps, DevSecOps, Architects, SRE  
-**Languages**: Python, Java, JavaScript/TypeScript, Go, .NET, and QA test frameworks  
-**Status**: ✅ 37 agents production-ready (v2.1 complete, all categories active)
+Version 2.1: 6-category architecture (QA, Dev, Shared, Infrastructure, Security, System) - ALL LIVE For: Developers, QA Engineers, DevOps, DevSecOps, Architects, SRE
 
-## 🎯 Vision
+Languages: Python, Java, JavaScript/TypeScript, Go, .NET, and QA test frameworks
 
-Transform your **QA + Development workflow** with intelligent agents that handle:
-- **Test Migration** (ANY framework: Karate↔Robot, Selenium→Playwright, Cypress→Playwright, Jest→Vitest, Postman→Robot/Karate, etc.)
-- **Test Generation** (API, UI, Performance, Smoke)
-- **Code Quality** (Reviews, Security, Data Validation, Performance Analysis)
-- **CI/CD Integration** (Jenkins, GitHub Actions, GitLab CI)
-- **Documentation** (Reports, Dashboards, Guides)
-- **Framework Templates** (Robot, Karate - Cypress + Playwright planned)
+Status: ✅ 37 agents production-ready (v2.1 complete, all 6 categories active)
 
-### Key Features
+🎯 Vision
 
-- **🤖 39→48 Specialized Agents**: Multi-language support (37 implemented + 11 planned roadmap)
-- **💬 Chat-Based Control**: Execute via natural language in VSCode
-- **🧠 Semantic Detection**: Universal Helper understands intent beyond keywords ("analisar código" → auto-loads code review)
-- **⚡ Auto-Activation**: All agents activate automatically when you mention relevant keywords (no manual loading needed)
-- **🔄 ANY→ANY Migration**: Convert between ANY QA frameworks (Karate↔Robot, Selenium→Playwright, Cypress→Playwright, Jest→Vitest, Postman→Robot/Karate)
-- **💰 Token Optimization**: 90%+ savings (37 agents, 2 active by default) + 57% instruction reduction
-- **📊 Auto-Partitioning**: SUMMARY.md manages history automatically (500 lines threshold)
-- **🔄 Flexible Workflows**: Run individually or orchestrated
-- **✅ Checkpoint System**: Review and approve at key phases
-- **🔁 Error Recovery**: Resume from any interruption point
-- **📚 Auto Documentation**: Complete docs generation
-- **🎨 Framework Agnostic**: Works with Robot, Karate, Cypress, Playwright, Selenium, Jest, Postman
+Transform your QA + Development workflow with intelligent agents that handle:
 
----
+Test Migration (ANY→ANY framework: Karate↔Robot, Selenium→Playwright, Cypress→Playwright, Jest→Vitest, Postman→Robot/Karate, etc.)
 
-## 📦 Agent Categories (39→49 Total - v2.1 FINAL: 37 Implemented + 12 Planned)
+Test Generation (API, UI, Performance, Smoke)
 
-### 🎯 QA Agents (9 - QA Only)
-**Status**: ✅ v1.0 Production Ready
+Code Quality (Reviews, Security, Data Validation, Performance Analysis)
 
-- **🔄 Migration** (5): Karate↔Robot core conversion engine
-- **🧪 Test Strategy** (2): Organization, analysis, tagging, coverage
-- **🤖 Frameworks** (2): Robot Framework, Karate DSL templates
+CI/CD Integration (Jenkins, GitHub Actions, GitLab CI)
 
-**Location**: `.github/agents/qa/` (9 agents)
+Documentation (Reports, Dashboards, Guides)
 
-### 💻 Dev Agents (14 - Dev Only)
-**Status**: ✅ v2.1 Production Ready
+Framework Templates (Robot, Karate, Cypress, Playwright)
 
-- **🐍 Python** (4): Code Generator, Refactoring, Migration, Linter/Type Checker
-- **🐹 Go** (3): Code Generator, Concurrency, Performance
-- **🔷 .NET** (3): Code Generator, EF Core, ASP.NET Patterns
-- **🟨 JavaScript/TypeScript** (3): Code Generator, TypeScript, Performance
-- **🔄 Generic** (2): Language Migration, Architecture Analyzer
+Key Features
 
-**Location**: `.github/agents/dev/` (14 agents)
+🤖 49 Specialized Agents: Multi-language support across the entire SDLC (37 active + 12 roadmap).
 
-### 🔄 Shared Agents (8 - QA + Dev)
-**Status**: ✅ v1.0 Production Ready
+💬 Chat-Based Control: Execute via natural language in VSCode.
 
-- **👁️ Code Review** (4): Quality, Security, Data Validation, Performance
-- **📖 Documentation** (1): README, Guides, API Docs, Reports
-- **📊 Reporting** (1): Dashboards, Metrics, Allure Integration
-- **🚀 DevOps** (2): CI/CD Validator, Repo Setup
+🧠 Semantic Detection: Universal Helper understands intent beyond keywords ("analisar código" → auto-loads code review).
 
-**Location**: `.github/agents/shared/` (8 agents)
+⚡ Auto-Activation: All agents activate automatically when you mention relevant keywords (no manual loading needed).
 
-### 🏗️ Infrastructure Agents (6 - LIVE)
-**Status**: ✅ v2.1 Production Ready
+🔄 ANY→ANY Migration: Intelligent mapping and conversion between ANY QA frameworks.
 
-- **📋 Infrastructure as Code** (2): Terraform, Bicep/ARM
-- **🐳 Kubernetes** (2): Manifests, Helm Charts
-- **🌩️ Cloud Deployment** (2): Azure, AWS
+💰 Token Optimization: 90%+ savings via semantic routing and AGENTS.md system.
 
-**Location**: `.github/agents/infrastructure/`
+📊 Auto-Partitioning: SUMMARY.md manages history automatically (500 lines threshold).
 
-### 🔐 Security Agents (3 - LIVE)
-**Status**: ✅ v2.1 Production Ready
+🔄 Flexible Workflows: Run individually or orchestrated.
 
-- **🔐 Secrets Management** (1): Key Vault, Azure Secrets, HashiCorp Vault
-- **✅ Compliance** (1): GDPR, SOC2, PCI-DSS
-- **🔍 Vulnerability Scanning** (1): SAST, CVEs, Secrets Detection
+✅ Checkpoint System: Review and approve at key phases.
 
-**Location**: `.github/agents/security/`
+🔁 Error Recovery: Resume from any interruption point.
 
-### 📍 System Agents (2 - Always Active)
-**Status**: ✅ v2.1 Production Ready (NEW!)
+📚 Auto Documentation: Complete docs generation (README, Guides, API Docs).
 
-- **🤖 Universal Helper**: Semantic intent detection + category-based routing
-- **📋 Specification Agent**: Interactive 5-phase PRD + Architecture generator
+🎨 Framework Agnostic: Works with Robot, Karate, Cypress, Playwright, Selenium, Jest, Postman.
 
-**Location**: `.github/agents/system/` (2 agents)
+📦 Agent Categories (49 Total - v2.1 FINAL)
 
----
+📍 System Agents (2 - Always Active)
 
-## 📚 Documentação
+Status: ✅ v2.1 Production Ready
 
-Toda a documentação está organizada em `/docs/`:
+🤖 Universal Helper: Semantic intent detection + category-based routing.
 
-### 🚀 Para Começar
-- [**Sistema Auto-Ativação** (5 min)](docs/SISTEMA_AUTO_ATIVACAO.md) - Como os agents funcionam automaticamente
-- [**QUICK_REFERENCE** (PDF link em docs/)](docs/SISTEMA_AUTO_ATIVACAO.md#-keywords-de-auto-ativação) - Guia rápido de keywords
+📋 Specification Agent: Interactive 5-phase PRD + Architecture generator.
+Location: .github/agents/system/
 
-### 📖 Documentação Técnica
-- [**Análise Completa**](docs/ANALISE_COMPLETA_AGENTS.md) - Arquitetura detalhada (18+ agents)
-- [**Exemplos de Uso**](docs/EXEMPLOS_USO_CHAT.md) - Casos de uso práticos com exemplos
-- [**Roadmap de Expansão**](docs/ROADMAP_AGENTS_EXPANSION.md) - Futuros agents (50+), Development Features, MCPs
+🎯 QA Agents (12)
 
-### 🔗 MCPs (Model Context Protocol)
-- [**MCP Overview**](.mcp/README.md) - Integração com serviços externos
-- **Planejado**: CI/CD, Cloud, Colaboração
+Status: ✅ v2.1 Production Ready
 
-### 🎯 Quick Links
-- **Agents Atualmente Ativos**: 37 (2 always active by default)
-- **Auto-Activation Keywords**: 200+
-- **Token Savings**: 90%+ vs. all agents active
-- **Status**: ✅ v2.1 Production Ready (All 6 Categories Live)
+🔄 Migration (7): Orchestrator, Core, Dependency Mapper, Environment Config, API Mapper, Keyword Designer, Assertion Converter.
 
----
+🧪 Test Strategy (2): Organization, analysis, tagging, coverage.
 
-## 🎯 Quick Start (5 min)
+🤖 Frameworks (2): Robot Framework, Karate DSL templates.
 
-### 1. Abra VS Code neste projeto
+🏗️ Scaffold (1): Project structure and directory generator.
+Location: .github/agents/qa/
 
-### 2. Escolha sua tarefa:
+💻 Dev Agents (17)
 
-| Tarefa | Digite | Agents Carregam |
-|--------|--------|---|
-| **Migrar testes** | "migrar de X para Y" | migration (7) |
-| **Revisar código** | "revisar código" | code-review (4) |
-| **Criar pipeline** | "pipeline github actions" | devops (3) |
-| **Análise testes** | "cobertura de testes" | test-strategy (2) |
-| **Gerar template** | "novo projeto robot" | frameworks (2) |
+Status: ✅ v2.1 Production Ready
 
-### 3. Agents auto-carregam automaticamente!
+🐍 Python (4): Code Generator, Linter/Type Checker, Migration, Refactoring.
 
----
+🐹 Go (3): Code Generator, Concurrency Specialist, Performance Optimizer.
 
-## 📚 Documentação Completa
+🔷 .NET (3): Code Generator, EF Core Specialist, ASP.NET Patterns.
 
-### 🧠 Semantic Intent Detection & Auto-Activation (NEW!)
-- **Universal Helper upgraded**: Understands intent beyond exact keywords AND auto-loads agents automatically
-- **Auto-activation patterns**:
-  - Say "revisar código" → Auto-loads all code review agents (no manual #file needed)
-  - Say "migrar de Cypress" → Auto-loads migration agents (no "migrate" keyword needed)
-  - Mention "performance", "timeout", "lento" → Auto-loads performance analyzer
-  - Say "criar dashboard" → Auto-loads reporting designer
-- **Context-aware**: Uses file types, git status, project structure as additional clues
-- **All 23 agents auto-load**: Every agent has keyword triggers for automatic activation
+🟨 JS/TS (3): Code Generator, TypeScript Specialist, Performance.
 
-### 🔄 ANY→ANY Framework Migration (NEW!)
-- **Universal migration support**: Not limited to Karate→Robot (supports ANY QA framework)
-- **Supported conversions**:
-  - Karate DSL ↔ Robot Framework
-  - Selenium (Java/Python) → Robot Framework / Playwright
-  - Cypress → Playwright
-  - Jest → Vitest
-  - Postman Collections → Robot / Karate
-  - Custom frameworks supported via agent customization
-- **Intelligent detection**: System auto-detects source/target frameworks from file types
-- **Auto-activates**: Simply mention "migrate" or "convert" + framework names
+☕ Java (2): Code Generator, Spring Patterns.
 
-### 🚀 AGENTS.md Auto-Loading System
-- **Zero manual config**: All 23 agents load via AGENTS.md (no registration needed)
-- **13 AGENTS.md files**: One per category for smart loading
-- **VS Code native**: `chat.useAgentsMdFile` + `chat.useNestedAgentsMdFiles` (Microsoft standard)
-- **Semantic routing**: Universal Helper analyzes requests + loads agents via `#file` automatically
-- **Context clues**: File extensions, keywords, user intent all trigger auto-load
-- **Example workflows**:
-  - Edit `.feature` file + mention "convert" → `migration/AGENTS.md` loads automatically
-  - Select code + say "revisar" → `code_review/AGENTS.md` loads automatically
-  - Type "ci/cd pipeline" → `devops-helper/AGENTS.md` loads automatically
+🔄 Generic (2): Architecture Analyzer, Language Migration Specialist.
+Location: .github/agents/dev/
 
-### 🔄 MR/PR Workflow Integration
-- **Auto MR/PR template**: Generated after each batch commit
-- **Complete checklist**: Code review, tests, documentation
-- **Reviewer suggestions**: QA Lead + Robot/Karate specialist
-- **GitLab/GitHub instructions**: Pre-filled URLs to create MR
-- **Next steps**: Complete flow until merge
+🔄 Shared Agents (9)
 
-### ⚡ Token Optimization (90%+ Agent Reduction)
-- **copilot-instructions.md**: Only base instructions (2 agents always active)
-- **AGENTS.md system**: 21 agents load only when needed (via semantic detection)
-- **Result**: 90%+ fewer tokens in base instructions vs. loading all 23 agents
-- **MCP optimization**: Universal Helper replaces complex nested decision trees with semantic detection
+Status: ✅ v2.1 Production Ready
 
-### 📊 Auto-Partitioning History
-- **SUMMARY.md** auto-partitions at 500 lines
-- Keeps last 2 batches inline, archives older ones to `summary-history/`
-- Prevents token overload during long migrations
-- Complete history preserved with links
+👁️ Code Review (4): Quality, Security, Data Validation, Performance Analyzer.
 
-### 🏗️ Scaffold Generator Expanded
-- **Production-ready**: Expanded from 9 to 200+ lines
-- **3 scaffold types**: API, UI, Hybrid testing structures
-- **Complete examples**: Folder structures, config files, CI/CD integration
+📖 Documentation (1): README, Guides, API Docs.
 
----
+📊 Reporting (1): Dashboards, Metrics, Allure Integration.
 
-## Quick Start
+🚀 DevOps (3): CI/CD Validator, Issue Templates, Repo Setup Assistant.
+Location: .github/agents/shared/
 
-### 1. Installation
-```bash
-git clone https://github.com//AI_PLATFORM_WITH_TOOLS_AND_RULES_FOR_QA.git
-cd AI_PLATFORM_WITH_TOOLS_AND_RULES_FOR_QA
+🏗️ Infrastructure Agents (6)
+
+Status: ✅ v2.1 Production Ready
+
+📋 IaC (2): Terraform Specialist, Bicep Specialist.
+
+🐳 Kubernetes (2): Manifest Generator, Helm Specialist.
+
+🌩️ Cloud (2): Azure Deployment, AWS Deployment.
+Location: .github/agents/infrastructure/
+
+🔐 Security Agents (3)
+
+Status: ✅ v2.1 Production Ready
+
+🔐 Specialists: Vault/Secrets Management, Compliance Auditor, Vulnerability Scanner.
+Location: .github/agents/security/
+
+📚 Documentação
+
+Toda a documentação está organizada em /docs/:
+
+🚀 Para Começar
+
+Sistema Auto-Ativação (5 min) - Como os agents funcionam automaticamente.
+
+QUICK_REFERENCE - Guia rápido de keywords.
+
+📖 Documentação Técnica
+
+Análise Completa - Arquitetura detalhada dos 49 agentes.
+
+Exemplos de Uso - Casos práticos com exemplos (Português).
+
+Roadmap de Expansão - Futuros agents (50+), MCPs e Mobile.
+
+🔗 MCPs (Model Context Protocol)
+
+MCP Overview - Integração com serviços externos (Jenkins, GitLab CI, Cloud).
+
+🎯 Quick Start (5 min)
+
+1. Instalação
+
+git clone [https://github.com/fabiopolli/COPILOT_AGENTS_PLATFORM.git](https://github.com/fabiopolli/COPILOT_AGENTS_PLATFORM.git)
+cd COPILOT_AGENTS_PLATFORM
 code .
-```
 
-### 2. Activate Agents (Optional)
-By default, only QA Helper is active. For advanced features:
 
-1. Open `.vscode/settings.json`
-2. Uncomment the agent section you need (Ctrl+/)
-3. Reload VS Code: `Ctrl+Shift+P` → "Developer: Reload Window"
+2. VSCode Configuration
 
-**For most tasks, activation is automatic** - QA Helper detects intent and loads agents via `#file`!
+Habilite o suporte nativo no seu .vscode/settings.json:
 
-### 3. Usage Examples
+{
+  "chat.useAgentsMdFile": true,
+  "chat.useNestedAgentsMdFiles": true
+}
 
-#### Simple Question (No activation needed)
-```
-"How to create a for loop in Python?"
-→ QA Helper responds directly
-```
 
-#### Framework Migration (Automatic detection)
-```
-"Migrate my Selenium tests to Playwright"
-→ QA Helper detects migration intent → Auto-loads migration agents
-```
+3. Escolha sua tarefa no Chat do Copilot:
 
-#### Code Review (Semantic detection)
-```
-"Analisar este código para segurança"
-→ QA Helper detects review intent → Auto-loads code_review + security-reviewer
-```
+Tarefa
 
-#### Generate Template (Framework specialist auto-loaded)
-```
-"Create Robot Framework template for API testing"
-→ Complete project structure with 25+ keywords
-```
+Digite
 
-### 4. Review at Checkpoints
-For migration workflows, the system pauses after each phase for your review.
+Agents Carregados
 
----
+Migrar testes
 
-## Usage Examples
+"migrar de X para Y"
 
-### Complete Migration (ANY framework)
-```
-"Convert my Cypress tests to Playwright"
-"Migrate Karate project to Robot Framework"
-"Transform Selenium Java tests to Robot"
-```
+migration (7)
 
-### Custom Workflow
-```
-"Run only agents 1, 2, 6, and 8"
-or
-"Skip API Endpoint Mapper and Test Strategy"
-```
+Revisar código
 
-### Single Agent
-```
-"Execute only the Migration agent"
-```
+"revisar código"
 
-### Interactive Mode
-```
-"Run with checkpoints so I can review each phase"
-```
+code-review (4)
 
-### Resume Interrupted Migration
-```
-"Resume the migration from where we stopped"
-```
+Criar pipeline
 
----
+"pipeline github actions"
 
-## Documentation
+devops (3)
 
-- **[docs/](./docs/)** - Full documentation folder
-  - **ANALISE_COMPLETA_AGENTS.md** - Complete architecture analysis (500+ lines)
-  - **EXEMPLOS_USO_CHAT.md** - Practical usage examples (Portuguese)
-  - **ROADMAP_AGENTS_EXPANSION.md** - Future development (Q1-Q4 2025)
-- **[.github/agents/](`.github/agents/)** - Individual agent documentation
-  - ***/agent-prompt.md** - Individual agent instructions
-  - ***/AGENTS.md** - Agent index and categorization
-- **.github/copilot-instructions.md** - System configuration and detection rules
-- **.vscode/settings.json** - VS Code configuration (agents loading)
+Análise testes
 
----
+"cobertura de testes"
 
-## Generated Project Structure
+test-strategy (2)
 
-```
+Geração Infra
+
+"manifesto kubernetes"
+
+infrastructure (2)
+
+🧠 Deep Dive: Advanced Features
+
+Semantic Intent Detection & Auto-Activation
+
+Universal Helper upgraded: Understands intent beyond exact keywords.
+
+Say "revisar código" → Auto-loads code review agents.
+
+Mention "performance", "timeout", "lento" → Auto-loads performance analyzer.
+
+Context-aware: Uses file types, git status, and project structure as clues.
+
+ANY→ANY Framework Migration
+
+Universal migration support: Karate ↔ Robot, Selenium → Playwright, Cypress → Playwright, Jest → Vitest, Postman → Robot/Karate.
+
+Intelligent detection: System auto-detects source/target frameworks from file types.
+
+Customization: Support for internal frameworks via agent prompting.
+
+AGENTS.md Auto-Loading System
+
+Zero manual config: All agents load via category-based AGENTS.md files.
+
+Semantic routing: Helper analyzes requests and triggers #file loads automatically.
+
+MR/PR Workflow Integration
+
+Auto Template: Generated after each batch commit.
+
+Complete checklist: Code review results, test coverage, documentation status.
+
+Next steps: Automated flow until merge.
+
+Scaffold Generator
+
+Production-ready: Expanded to 200+ lines of structural instructions.
+
+3 scaffold types: API, UI, and Hybrid testing structures.
+
+🏗️ Generated Project Structure
+
 Robot_Framework_Project/
 ├── config/                 # Environment configurations
 ├── data/                   # Test data
@@ -317,226 +266,75 @@ Robot_Framework_Project/
 ├── tests/                  # Robot Framework test files
 ├── requirements.txt        # Python dependencies
 └── README.md              # Project documentation
-```
 
----
 
-## Execution Modes
+🔄 Execution Modes
 
-### Full Workflow
-Executes all agents in suggested order (orchestrated).
+Full Workflow: Executes all agents in suggested order (orchestrated).
 
-### Custom Workflow
-Execute specific agents in any order you choose.
+Custom Workflow: Execute specific agents in any order you choose.
 
-### Single Agent
-Execute one agent independently.
+Single Agent: Execute one agent independently.
 
-### Interactive
-Execute with checkpoints for review after each phase.
+Interactive: Execute with checkpoints for review after each phase.
 
----
+🔁 Error Recovery
 
-## Error Recovery
+Se algo correr mal:
 
-If something goes wrong:
-1. System automatically saves state
-2. You can resume from where you stopped
-3. Options: RETRY, SKIP, MANUAL fix, or ABORT
+O sistema guarda automaticamente o estado.
 
----
+Podes retomar exatamente de onde paraste.
 
-## Example Conversation
+Opções: RETRY, SKIP, MANUAL fix, ou ABORT.
 
-```
+💬 Example Conversation
+
 User: "Migrate my Selenium project to Playwright. Files: #Folder examples/selenium-tests"
 
 QA Helper: "Detectei migração Selenium → Playwright!
 ⚠️ CARREGANDO AGENTS DE MIGRAÇÃO AUTOMATICAMENTE:
 #file .github/agents/migration/AGENTS.md"
 
-Orchestrator: "Analyzing project...
-Found: 35 test files, WebDriver setup, PageObjects
+Orchestrator: "Analyzing project... Found: 35 test files, WebDriver setup, PageObjects.
+Default workflow (7 agents adapted):
 
-Default workflow (7 agents adapted for Selenium→Playwright):
-1. Dependency Mapper (selenium packages → playwright)
-2. Environment Configuration (WebDriver config → playwright.config)
-3. API Endpoint Mapper (if REST calls present)
-4. Keyword Library Designer (PageObjects → Playwright pages)
-5. Test Strategy (test organization)
-6. Migration Core (Selenium syntax → Playwright)
-7. Assertion Converter (JUnit/TestNG → Playwright expect)
+Dependency Mapper
 
+Environment Configuration
+
+API Endpoint Mapper
+...
 Execute complete workflow? (yes/no/customize)"
 
-User: "yes"
+📝 Changelog & Roadmap
 
-Orchestrator: "Starting migration...
-[Executes Phase 1]
-CHECKPOINT 1: Foundation setup complete. Review files. Continue? (yes/no)"
+v1.0 (✅ DONE - Sept 2025)
 
-User: "yes"
+Multi-agent system core (23 agents).
 
-Orchestrator: [Continues with Phase 2...]
-```
+ANY→ANY framework migration engine.
 
----
+v2.1 (✅ LIVE - Jan 2026)
 
-## Requirements
+Expansion to 49 Agents: All 6 categories fully operational.
 
-- **VSCode** with GitHub Copilot
-- **Git** for version control
-- **Python 3.11+** (for Robot Framework projects)
-- **Java 17+** + **Maven** (for Karate Framework projects)
-- **Node.js 18+** (for Playwright/Cypress projects)
+Infrastructure & Security: Terraform, Kubernetes, and Vault agents LIVE.
 
----
+System Agents: Advanced PRD + Architecture generation.
 
-## Configuration
+v3.0 (⏳ PLANNED - Q4 2026)
 
-All agents are configured in `.vscode/settings.json`:
+Advanced Testing: Mobile Testing (Appium) and Visual Regression.
 
-```json
-{
-  "github.copilot.chat.codeGeneration.instructions": [
-    // QA Helper (always active - semantic detection)
-    // Migration agents (commented - auto-loaded by QA Helper)
-    // Template agents (commented - auto-loaded by QA Helper)
-  ],
-  "github.copilot.chat.reviewSelection.instructions": [
-    // Quality agents (commented - auto-loaded by QA Helper)
-  ],
-  "github.copilot.chat.testGeneration.instructions": [
-    // Test management agents (commented - auto-loaded by QA Helper)
-  ],
-  "github.copilot.chat.documentation.instructions": [
-    // Documentation agents (commented - auto-loaded by QA Helper)
-  ]
-}
-```
+MCP Expansion: Phase 2 Cloud & Collaboration integrations.
 
-**Most agents auto-load** via QA Helper's semantic detection. Manual activation only needed for edge cases.
+🛡️ Security & Contributing
 
----
+Security: If you discover a vulnerability, please do NOT open a public issue.
+Contact privately: fabiopolli@outlook.com or via LinkedIn.
 
+Contributing: Quer adicionar novos agents? Expandir CI/CD, Frameworks ou MCPs?
+📖 Leia CONTRIBUTING.md para templates e padrões de PR.
 
----
-
-## Repository
-
-**GitHub**: https://github.com/fabiopolli/COPILOT_AGENTS_PLATFORM/
-
----
-
-## Contributing
-
-Contributions are welcome! Please:
-1. Read `.github/docs/ANALISE_COMPLETA_AGENTS.md` for architecture details
-2. Check `.github/docs/ROADMAP_AGENTS_EXPANSION.md` for planned features
-3. Follow the agent structure pattern in `.github/agents/`
-
----
-
----
-
-## 📋 License
-
-This project is licensed under the **MIT License** - see LICENSE file for details.
-
-**In short:**
-- ✅ Use commercially
-- ✅ Modify the code
-- ✅ Distribute it
-- ✅ Use privately
-- ⚠️ Liability and warranty disclaimers apply
-
----
-
-## 🤝 Contributing
-
-**We want your feedback!** This is a community project. 
-
-### How to Contribute
-1. **Report issues** - Found a bug? Missing feature? Open an issue.
-2. **Suggest improvements** - Have ideas? Create a discussion.
-3. **Add agents** - Want to build a new agent? Follow the pattern in `.github/agents/`
-4. **Documentation** - Improve docs or add examples
-5. **Feedback** - Tell us what you'd change. Disagree with us. Challenge assumptions.
-
-### Guidelines
-- Read `.github/docs/ANALISE_COMPLETA_AGENTS.md` for architecture
-- Check `.github/docs/ROADMAP_AGENTS_EXPANSION.md` for planned work
-- Follow existing agent structure patterns in `.github/agents/`
-- Use semantic versioning (MAJOR.MINOR.PATCH)
-
-**Most importantly**: This is meant to evolve based on real-world use. If something doesn't work for your workflow, tell us.
-
----
-
-## 🛡️ Security
-
-If you discover a security vulnerability:
-- **DO NOT** open a public GitHub issue (exposes the vulnerability)
-- **Linkedin:** https://www.linkedin.com/in/fábio-polli/
-- Include: description, steps to reproduce, potential impact
-
-We take security seriously and will respond within 48 hours.
-
----
-
-## 🤝 Contributing
-
-Quer adicionar novos agents? Expandir CI/CD, Frameworks, Development Features ou MCPs?
-
-**[📖 Leia CONTRIBUTING.md](CONTRIBUTING.md)** para:
-- ✅ Template de novo agent
-- ✅ Como registrar no Universal Helper
-- ✅ Padrões de documentação
-- ✅ Áreas prioritárias para v1.5+ (Cypress, Playwright, Jenkins, Azure, MCPs)
-- ✅ Fluxo de PR
-
-**Areas Prioritárias:**
-- 🔴 **Frameworks**: Cypress Template, Playwright Template
-- 🔴 **CI/CD**: Jenkins, GitLab CI, Azure DevOps, AWS CodePipeline, GCP
-- 🔴 **Dev Features**: Refactoring, Performance, Security, Dependencies, Documentation
-- 🟢 **MCPs**: Phase 1 CI/CD integrations (Q2 2026)
-
----
-
-## 📝 Changelog
-
-### v1.0 - Initial Public Release (Setember 2025)
-- ✅ **Multi-agent system**: 23 specialized agents (7 migration + 16 specialized)
-- ✅ **Semantic intent detection**: Universal Helper with 100+ keywords
-- ✅ **Auto-activation**: All agents auto-load on relevant keywords
-- ✅ **ANY→ANY framework migration**: Karate↔Robot, Selenium→Playwright, Cypress→Playwright, Jest→Vitest, Postman→Robot/Karate, etc.
-- ✅ **Token optimization**: 90%+ savings (2 active agents default)
-- ✅ **Framework templates**: Robot + Karate specialists
-- ✅ **Quality assurance**: Code review, security, data validation, performance
-- ✅ **Test management**: Strategy, analysis, scaffold generator
-- ✅ **DevOps**: CI/CD Validator (GitHub Actions), Issue Templates, Repo Setup
-- ✅ **Documentation**: Complete system + roadmap + examples
-- ✅ **AGENTS.md system**: Auto-loading with zero configuration
-- ✅ **MCP Structure**: Ready for Phase 1 (Q2 2026)
-- ✅ **Project Organization**: Clean structure (docs/ + .mcp/)
-- ✅ **Contributing Guide**: Ready for community contributions
-
-### v1.5 - PLANNED (Dez 2025)
-- 🔜 **Frameworks**: Cypress Template, Playwright Template
-- 🔜 **CI/CD Expansion**: Jenkins, GitLab CI, Azure DevOps
-- 🔜 **Dev Features**: Refactoring, Performance, Security, Dependencies, Documentation agents
-- 🔜 **MCPs Phase 1**: CI/CD platform integrations
-
-### v2.0 - PLANNED (Q3 2026)
-- 🔜 **Cloud Agents**: AWS, GCP, Azure integrations
-- 🔜 **Advanced MCPs**: Test Frameworks, Collaboration
-- 🔜 **Test Data Management**: Faker, Database agents
-
-### v3.0 - PLANNED (Q4 2026)
-- 🔜 **Ecosystem**: 50+ agents total
-- 🔜 **Mobile Testing**: iOS/Android agents
-- 🔜 **Visual Regression**: Percy, Applitools integrations
-
----
-
-
+Version: 2.1 Final | Author: Fábio Polli | Year: 2026
