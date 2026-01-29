@@ -1,8 +1,9 @@
-# 📖 Sistema de Auto-Ativação de Agents v2.1 - Documentação
+# 📖 Sistema de Auto-Ativação de Agents v2.1 - Copilot Agents Platform
 
 **Data:** 29 de janeiro de 2026  
-**Status:** ✅ v2.1 - Sistema Completo com 6 Categorias  
-**Agents Totais:** 47+ planejados (23 v1.0 + 24 em desenvolvimento)  
+**Status:** ✅ v2.1 - Multi-Agent Platform (QA, Dev, Shared + Planejado: Infrastructure, Security)  
+**Agents Atuais:** 39 integrados (11 QA + 16+ Dev + 9 Shared + 2 System)  
+**Agents Planejados:** 47+ (com Infrastructure, Security e expansões futuras)  
 **Local:** Reorganizado em `.github/agents/` com 6 categorias profissionais
 
 ---

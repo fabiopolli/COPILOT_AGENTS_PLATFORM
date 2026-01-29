@@ -9,12 +9,12 @@
   // ============================================================
   // 💬 BASE INSTRUCTIONS (Sempre Ativas)
   // ============================================================
-  // 2 agents base: Core Platform + Universal Helper (detector inteligente)
+  // 2 agents base: Copilot Agents Platform + Universal Helper (detector inteligente)
   // Todos demais agents carregam via AGENTS.md conforme contexto
   "github.copilot.chat.codeGeneration.instructions": [
     {
       "file": ".github/copilot-instructions.md",
-      "description": "📚 Instruções gerais do sistema Copilot Agents Platform"
+      "description": "📚 Instruções gerais do sistema Copilot Agents Platform v2.1"
     },
     {
       "file": ".github/agents/universal-helper/agent-prompt.md",

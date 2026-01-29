@@ -1,15 +1,15 @@
-# Copilot Instructions: Workflow Agents System
+# 🤖 Copilot Instructions: Workflow Agents System v2.1
 
-> **📌 Para continuar trabalhando amanhã:** Veja `.github/COMO_CONTINUAR.md`
+> **📌 Próximos Passos:** Validar auto-ativação com todos 39 agents
 > 
 > **Este é o ÚNICO arquivo de instruções que você precisa manter atualizado.**  
-> Os READMEs na raiz são documentação externa (sincronize apenas antes de publicar).
+> Os READMEs e docs/ são documentação externa (sincronize antes de publicar).
 
-## 🚀 Agent Auto-Loading System (Zero Manual Configuration)
+## 🚀 Agents Auto-Loading System (Zero Manual Configuration)
 
 **IMPORTANTE:** Este sistema detecta sua intenção e carrega agents automaticamente via contexto.
 
-### Detection Rules - Como Carregar Agents Automaticamente
+### Arquitetura v2.1 (39 Agents - 6 Categorias)
 
 Quando o usuário menciona estas palavras-chave, VOCÊ DEVE carregar os agents correspondentes usando comandos `#file`:
 
@@ -177,9 +177,8 @@ Sistema detecta "migração" → Carrega agents automaticamente → Processa lot
 
 ---
 
-**Versão do Projeto:** 1.0 (Public Release - Community-Driven)  
-**Versão do Sistema:** 3.2 (DevOps Agents + Universal Helper Rename)  
+**Versão do Projeto:** 2.1 (Production Release - Community-Driven)  
+**Versão do Sistema:** 3.2 (6 Categorias + 39 Agents)  
 **Última atualização:** 29/01/2026  
-**Projeto exemplo:** `examples/score/`  
-**Configuração:** `.vscode/settings.json` + `.github/copilot-instructions.md`  
-**Para continuar amanhã:** Leia `docs/COMO_CONTINUAR.md` (quando criado)
+**Projeto exemplo:** `examples/`  
+**Configuração:** `.vscode/settings.json` + `.github/copilot-instructions.md`

@@ -1,23 +1,22 @@
-# Copilot Agents Platform for QA, Development & DevOps
-## Multi-Agent System for Testing, Development, and Automation Excellence
+# 🤖 Copilot Agents Platform
+## Multi-Agent System for Professional Development, QA, and DevOps
 
 > ⚠️ **THIS IS A DRAFT**  
 > This is not a final product. It's a starting point. A conversation. We need you to criticize it harshly.  
 > All controls are open for discussion. We want disagreement. We want edge cases we haven't considered.  
 > This is not our standard. It's meant to be the community standard, built by the people who actually implement these things.
 
-A comprehensive platform with **47+ specialized AI agents** for **QA automation, development workflows, and DevOps integration** - all controlled via natural language conversation in your IDE.
+A comprehensive platform with **39+ specialized AI agents** for **software development, QA automation, DevOps, and professional workflows** - all controlled via natural language conversation in your IDE.
 
-Built to make GitHub Copilot in VSCode more useful for daily tasks without needing to search documentation or write prompts each time.
+Built to make GitHub Copilot in VSCode more powerful and accessible for daily development tasks without documentation lookup or complex prompts.
 
 **🎯 Smart Token Management**: Only 2 agents active by default (90%+ token savings). AGENTS.md system loads others automatically by context and semantic detection.
 
-**🚀 Version 2.1**: Reorganized with category-based structure + New Specification Agent for PRD/Architecture generation
+**Version 2.1**: 6-category architecture (QA, Dev, Shared, Infrastructure, Security, System) + new Specification Agent  
 
-**For**: QA Engineers, Software Developers, DevOps, Software Architects  
-**Language**: Python, Java, JavaScript, Go, .NET, Markdown + Any Test Framework
-
----
+**For**: Developers, QA Engineers, DevOps, Architects  
+**Languages**: Python, Java, JavaScript/TypeScript, Go, .NET, and QA test frameworks  
+**Status**: ✅ 39 agents production-ready (83% of v1.0-v2.1 roadmap)
 
 ## 🎯 Vision
 
@@ -46,7 +45,7 @@ Transform your **QA + Development workflow** with intelligent agents that handle
 
 ---
 
-## 📦 Agent Categories (47+ Total - v2.1)
+## 📦 Agent Categories (39 Total - v2.1)
 
 ### 🎯 QA Agents (11 - QA Only)
 **Status**: ✅ v1.0 Production Ready
@@ -58,14 +57,14 @@ Transform your **QA + Development workflow** with intelligent agents that handle
 
 **Location**: `.github/agents/qa/`
 
-### 💻 Dev Agents (16+ - Dev Only)
-**Status**: 🔜 v1.5 Q2 2026 (In Development)
+### 💻 Dev Agents (16 - Dev Only)
+**Status**: ✅ v2.1 Production Ready (NEW!)
 
-- **🐍 Python** (4): Code Generator, Refactoring, Migration, Linter
+- **🐍 Python** (4): Code Generator, Refactoring, Migration, Linter/Type Checker
 - **🐹 Go** (3): Code Generator, Concurrency, Performance
 - **🔷 .NET** (3): Code Generator, EF Core, ASP.NET Patterns
 - **🟨 JavaScript/TypeScript** (3): Code Generator, TypeScript, Performance
-- **☕ Java** (2): Spring Patterns, Maven/Gradle
+- **☕ Java** (2): Code Generator, Spring Patterns
 - **🔄 Generic** (2): Language Migration, Architecture Analyzer
 
 **Location**: `.github/agents/dev/`
@@ -97,6 +96,14 @@ Transform your **QA + Development workflow** with intelligent agents that handle
 - **🔍 Vulnerability Scanning** (1): SAST, CVEs, Secrets Detection
 
 **Location**: `.github/agents/security/`
+
+### 📍 System Agents (2 - Always Active)
+**Status**: ✅ v2.1 Production Ready (NEW!)
+
+- **🤖 Universal Helper**: Semantic intent detection + category-based routing
+- **📋 Specification Agent**: Interactive 5-phase PRD + Architecture generator
+
+**Location**: `.github/agents/system/`
 
 ### 🤖 System Agents (2 - Always Active)
 **Status**: ✅ v1.0 + v2.1 (Complete)

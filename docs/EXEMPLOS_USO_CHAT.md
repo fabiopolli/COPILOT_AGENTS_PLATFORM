@@ -1,30 +1,30 @@
 # Exemplos de Uso via Chat - Copilot Agents Platform v2.1
 
-Este documento mostra exemplos práticos de como usar a plataforma via chat no VSCode/Copilot com a nova arquitetura v2.1.
+Este documento mostra exemplos práticos de como usar a plataforma via chat no VSCode/Copilot com a nova arquitetura v2.1 - uma plataforma multi-propósito para QA, desenvolvimento e DevOps.
 
 ## 🎯 O que Você Pode Fazer (v2.1)
 
-### 🎯 QA-Focused (11 Agents)
+### 🧪 QA-Focused (11 Agents)
 1. **Migração de Testes** (ANY framework → ANY framework)
 2. **Geração de Templates** (Robot, Karate, Cypress, Playwright)
 3. **Análise de Testes** (Cobertura, Estratégia, Organização)
 4. **Scaffold de Projetos** (Estruturas automáticas)
 
 ### 💻 Dev-Focused (16+ Agents)
-5. **Python Development** (Gen, Refactor, Migrate, Lint)
-6. **Go Development** (Gen, Concurrency, Performance)
-7. **.NET Development** (Gen, EF Core, ASP.NET)
-8. **JS/TypeScript Development** (Gen, TypeScript, Performance)
-9. **Java Development** (Spring, Maven)
+5. **Python Development** (Gen, Refactor, Migrate, Lint, Type Checking)
+6. **Go Development** (Gen, Concurrency, Performance, Optimization)
+7. **.NET Development** (Gen, EF Core, ASP.NET, C# Patterns)
+8. **JS/TypeScript Development** (Gen, TypeScript, Performance, React/Vue)
+9. **Java Development** (Spring, Maven, Gradle, Patterns)
 
 ### 🔄 Shared (9 Agents)
 10. **Revisão de Código** (Qualidade, Segurança, Performance)
-11. **Setup de DevOps** (CI/CD, GitHub Actions, Templates)
-12. **Documentação** (README, Guias, Relatórios)
+11. **Setup de DevOps** (CI/CD, GitHub Actions, GitLab CI, Templates)
+12. **Documentação** (README, Guias, Relatórios, API Docs)
 
 ### 📍 System (2 Agents)
 13. **Specification Agent** (PRD + Architecture para novo projeto)
-14. **Universal Helper** (Detecta intenção + roteia)
+14. **Universal Helper** (Detecta intenção + roteia automático)
 
 ## 📁 Antes de Começar: Use a Pasta `examples/`
 

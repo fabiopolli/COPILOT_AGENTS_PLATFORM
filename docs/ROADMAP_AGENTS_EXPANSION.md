@@ -1,22 +1,21 @@
-# Roadmap: QA Automation Platform - Expansão dos Agents
+# Roadmap: Copilot Agents Platform - Expansão dos Agents
 
 ## 🎯 Visão Geral
 
-Transformar o **Workflow-Agents** de um sistema de migração Karate→Robot para uma **plataforma completa de automação de QA** com agents especializados para todo o ciclo de vida de testes.
+Transformar o **Workflow-Agents** de um sistema de migração Karate→Robot para uma **plataforma completa multi-propósito** com agents especializados para QA, desenvolvimento (Python, .NET, JS/TS, Java, Go), DevOps e segurança.
 
 ## ✅ Status Atual (29/01/2026) - v2.1
 
 ### Implementado (v1.0 Release)
-- ✅ **23 Agents Ativos** (reorganizados em 6 categorias)
+- ✅ **39 Agents Integrados** (QA + Dev + Shared, reorganizados em 6 categorias)
 - ✅ **Reorganização Profissional** (qa/, dev/, shared/, infrastructure/, security/, system/)
 - ✅ **Specification Agent** (NEW! - PRD + ADD + TEST_SPEC + IMPLEMENTATION_PLAN)
 - ✅ **Universal Helper Reescrito** (roteamento semântico para todas 6 categorias)
-- ✅ **Sistema de Auto-Ativação Semântica** (100+ keywords, categoria-based)
-- ✅ **2 Framework Templates** (Robot + Karate completos)
-- ✅ **7 Migration Agents** (Karate→Robot workflow completo + suporte ANY→ANY)
-- ✅ **9 Quality Assurance + Shared Agents** (Review, Security, Data, Performance, Docs)
-- ✅ **2 Test Strategy Agents** (Strategy, Analysis)
-- ✅ **3 DevOps Agents** (GitHub Actions, Issues, Repository)
+- ✅ **Sistema de Auto-Ativação Semântica** (200+ keywords, multi-linguagem)
+- ✅ **11 QA Agents** (Migração, Estratégia, Frameworks, Scaffold)
+- ✅ **16+ Dev Agents** (Python 4, Go 3, .NET 3, JS/TS 3, Java 2, Generic 2)
+- ✅ **9 Shared Agents** (Review, Security, Data, Performance, Docs, DevOps)
+- ✅ **2 System Agents** (Universal Helper, Specification)
 - ✅ **Estrutura folder criada** (21 diretórios para nova organização)
 
 ### Em Planejamento (v1.5 - Q2 2026)
