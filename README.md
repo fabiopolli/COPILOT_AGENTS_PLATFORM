@@ -21,7 +21,7 @@ Built to make GitHub Copilot in VSCode more powerful and accessible for daily de
 ## 🎯 Vision
 
 Transform your **QA + Development workflow** with intelligent agents that handle:
-- **Test Migration** (ANY framework → ANY framework: Karate↔Robot, Selenium→Playwright, Cypress→Playwright, Jest→Vitest, Postman→Robot/Karate, etc.)
+- **Test Migration** (ANY framework: Karate↔Robot, Selenium→Playwright, Cypress→Playwright, Jest→Vitest, Postman→Robot/Karate, etc.)
 - **Test Generation** (API, UI, Performance, Smoke)
 - **Code Quality** (Reviews, Security, Data Validation, Performance Analysis)
 - **CI/CD Integration** (Jenkins, GitHub Actions, GitLab CI)
@@ -419,32 +419,12 @@ All agents are configured in `.vscode/settings.json`:
 
 ---
 
-## Status
-
-**Current Implementation**: 21/38 agents (55%)
-
-| Category | Status |
-|----------|--------|
-| System | ✅ 1/1 (Universal Helper with semantic detection) |
-| Migration | ✅ 7/7 (100% - ANY→ANY framework support) |
-| Quality | ✅ 4/4 (100%) |
-| Test Management | ✅ 3/3 (100% - Scaffold expanded to 200+ lines) |
-| Documentation | ✅ 2/2 (100%) |
-| Templates | ✅ 2/2 (100% - Robot + Karate) |
-| DevOps & CI/CD | ✅ 3/3 (100% - GitHub Actions, Templates, Setup) |
-| Cypress Template | ❌ 0/1 (planned) |
-| Playwright Template | ❌ 0/1 (planned) |
-| Test Generation | ❌ 0/4 (planned) |
-| Data Management | ❌ 0/4 (planned) |
-| Container & IaC | ❌ 0/4 (planned) |
-| Monitoring & Logging | ❌ 0/4 (planned) |
-| Release Automation | ❌ 0/1 (planned) |
 
 ---
 
 ## Repository
 
-**GitHub**: https://github.com/fabiopolli/AI_PLATFORM_WITH_TOOLS_AND_RULES_FOR_QA
+**GitHub**: https://github.com/fabiopolli/COPILOT_AGENTS_PLATFORM/
 
 ---
 
@@ -497,7 +477,7 @@ This project is licensed under the **MIT License** - see LICENSE file for detail
 
 If you discover a security vulnerability:
 - **DO NOT** open a public GitHub issue (exposes the vulnerability)
-- **Email privately** to fabiopolli@outlook.com
+- **Linkedin:** https://www.linkedin.com/in/fábio-polli/
 - Include: description, steps to reproduce, potential impact
 
 We take security seriously and will respond within 48 hours.
@@ -525,7 +505,7 @@ Quer adicionar novos agents? Expandir CI/CD, Frameworks, Development Features ou
 
 ## 📝 Changelog
 
-### v1.0 - Initial Public Release (January 2026)
+### v1.0 - Initial Public Release (Setember 2025)
 - ✅ **Multi-agent system**: 23 specialized agents (7 migration + 16 specialized)
 - ✅ **Semantic intent detection**: Universal Helper with 100+ keywords
 - ✅ **Auto-activation**: All agents auto-load on relevant keywords
@@ -541,7 +521,7 @@ Quer adicionar novos agents? Expandir CI/CD, Frameworks, Development Features ou
 - ✅ **Project Organization**: Clean structure (docs/ + .mcp/)
 - ✅ **Contributing Guide**: Ready for community contributions
 
-### v1.5 - PLANNED (Q2 2026)
+### v1.5 - PLANNED (Dez 2025)
 - 🔜 **Frameworks**: Cypress Template, Playwright Template
 - 🔜 **CI/CD Expansion**: Jenkins, GitLab CI, Azure DevOps
 - 🔜 **Dev Features**: Refactoring, Performance, Security, Dependencies, Documentation agents
