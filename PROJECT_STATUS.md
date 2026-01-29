@@ -121,7 +121,7 @@
 ## 📁 Project Structure (Clean & Organized)
 
 ```
-PLATFORM_AI_WITH_TOOLS_AND_RULES_FOR_QA/
+COPILOT_AGENTS_PLATFORM/
 ├── .github/
 │   ├── agents/
 │   │   ├── migration/

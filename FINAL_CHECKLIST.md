@@ -60,9 +60,9 @@
 4. [x] Commits organizados
 
 ### 🔜 Ao Criar Novo Repositório
-1. **Renomear pasta**: `PLATFORM_AI_WITH_TOOLS_AND_RULES_FOR_QA` → `COPILOT_AGENTS_PLATFORM`
+1. **Pasta renomeada**: ✅ `COPILOT_AGENTS_PLATFORM`
 2. **Criar novo repo** no GitHub: `copilot-agents-platform`
-3. **Fazer PR** com 4 commits consolidados
+3. **Fazer PR** com 5 commits consolidados
 
 ### 📋 Após PR
 1. Testar Specification Agent com projeto real
