@@ -1078,10 +1078,10 @@ Security Reviewer Agent: "Escaneando projeto de testes...
 
 ❌ CRÍTICO (3):
 1. tests/robot/resources/variables.robot:15
-   ${API_KEY} = 'sk-1234567890abcdef'  ← Chave hardcoded
+   ${API_KEY} = '${ENV_API_KEY}'  # Use environment variable, not hardcoded
    
 2. tests/robot/keywords/auth-keywords.robot:28
-   ${DB_PASSWORD} = 'admin123'  ← Senha em texto claro
+   ${DB_PASSWORD} = '${ENV_DB_PASSWORD}'  # Use environment variable
    
 3. tests/robot/data/test-users.json:5
    "password": "MyPass123"  ← Credencial commitada
