@@ -6,11 +6,11 @@
 > All controls are open for discussion. We want disagreement. We want edge cases we haven't considered.  
 > This is not our standard. It's meant to be the community standard, built by the people who actually implement these things.
 
-A comprehensive platform with **48 specialized AI agents** for **software development, QA automation, DevOps, Infrastructure, Security, and professional workflows** - all controlled via natural language conversation in your IDE.
+A comprehensive platform with **39→48 specialized AI agents** (37 implemented + 11 planned) for **software development, QA automation, DevOps, Infrastructure, Security, and professional workflows** - all controlled via natural language conversation in your IDE.
 
 Built to make GitHub Copilot in VSCode more powerful and accessible for daily development tasks without documentation lookup or complex prompts.
 
-- **🎯 Smart Token Management**: Only 2 agents active by default (90%+ token savings). 37 agents load automatically via AGENTS.md by context and semantic detection.
+- **🎯 Smart Token Management**: Only 2 agents active by default (90%+ token savings). 37 agents (35→37 current) load automatically via AGENTS.md by context and semantic detection.
 
 **Version 2.1**: 6-category architecture (QA, Dev, Shared, Infrastructure, Security, System) - **ALL LIVE**  
 
@@ -30,12 +30,12 @@ Transform your **QA + Development workflow** with intelligent agents that handle
 
 ### Key Features
 
-- **🤖 35 Specialized Agents**: Multi-language support (QA, Dev, Shared, System)
+- **🤖 39→48 Specialized Agents**: Multi-language support (37 implemented + 11 planned roadmap)
 - **💬 Chat-Based Control**: Execute via natural language in VSCode
 - **🧠 Semantic Detection**: Universal Helper understands intent beyond keywords ("analisar código" → auto-loads code review)
 - **⚡ Auto-Activation**: All agents activate automatically when you mention relevant keywords (no manual loading needed)
 - **🔄 ANY→ANY Migration**: Convert between ANY QA frameworks (Karate↔Robot, Selenium→Playwright, Cypress→Playwright, Jest→Vitest, Postman→Robot/Karate)
-- **💰 Token Optimization**: 90%+ savings (23 agents, 2 active by default) + 57% instruction reduction
+- **💰 Token Optimization**: 90%+ savings (37 agents, 2 active by default) + 57% instruction reduction
 - **📊 Auto-Partitioning**: SUMMARY.md manages history automatically (500 lines threshold)
 - **🔄 Flexible Workflows**: Run individually or orchestrated
 - **✅ Checkpoint System**: Review and approve at key phases
@@ -45,7 +45,7 @@ Transform your **QA + Development workflow** with intelligent agents that handle
 
 ---
 
-## 📦 Agent Categories (39 Total - v2.1)
+## 📦 Agent Categories (39→48 Total - v2.1: 37 Implemented + 11 Planned)
 
 ### 🎯 QA Agents (9 - QA Only)
 **Status**: ✅ v1.0 Production Ready
