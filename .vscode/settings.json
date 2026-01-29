@@ -33,32 +33,48 @@
   ],
 
   // ============================================================
-  // 📦 AGENTS DISPONÍVEIS - CARREGAMENTO AUTOMÁTICO v2.1 (37 LIVE)
+  // 📦 AGENTS DISPONÍVEIS - CARREGAMENTO AUTOMÁTICO v2.1 FINAL
   // ============================================================
+  // VALIDAÇÃO REAL: 49 agents confirmados na estrutura
   // ATIVAÇÃO AUTOMÁTICA: Os agents abaixo carregam via AGENTS.md 
   // quando usuário menciona palavras-chave ou via context do arquivo
   //
-  // System (SEMPRE ATIVO - 2 agents):
+  // 🎯 QA (12 agents):
+  //   - qa/AGENTS.md → migration (7: orchestrator, core, dependency-mapper, environment-config, 
+  //                              api-endpoint-mapper, keyword-designer, assertion-converter)
+  //                  test-strategy (2: test-strategy, analysis)
+  //                  frameworks (2: robot-framework-template, karate-framework-template)
+  //                  scaffold (1)
+  //
+  // 💻 Dev (17 agents):
+  //   - dev/AGENTS.md → python (4: code-generator, linter-type-checker, migration-specialist, refactoring-specialist)
+  //                  go (3: code-generator, concurrency-specialist, performance-optimizer)
+  //                  dotnet (3: code-generator, ef-core-specialist, aspnet-patterns)
+  //                  js-ts (3: code-generator, typescript-specialist, performance-optimizer)
+  //                  java (2: code-generator, spring-patterns)
+  //                  generic (2: architecture-analyzer, language-migration-specialist)
+  //
+  // 🔄 Shared (9 agents):
+  //   - shared/AGENTS.md → code-review (4: code-review, data-validation, performance-analyzer, security-reviewer)
+  //                     documentation (1)
+  //                     reporting-designer (1)
+  //                     devops (3: ci-cd-validator, issue-template-designer, repo-setup-assistant)
+  //
+  // 🏗️ Infrastructure (6 agents):
+  //   - infrastructure/AGENTS.md → iac (2: terraform-specialist, bicep-specialist)
+  //                            kubernetes (2: manifest-generator, helm-specialist)
+  //                            cloud (2: azure-deployment, aws-deployment)
+  //
+  // 🔐 Security (3 agents):
+  //   - security/AGENTS.md → vault-specialist, compliance-auditor, vulnerability-scanner
+  //
+  // 📍 System (2 agents):
   //   - universal-helper/agent-prompt.md (detector semântico de intenção)
   //   - specification/agent-prompt.md (PRD + ADD + TEST_SPEC + IMPLEMENTATION_PLAN)
   //
-  // QA (11 agents):
-  //   - qa/AGENTS.md → migration (7), test-strategy (2), frameworks (2)
-  //
-  // Dev (14 agents):
-  //   - dev/AGENTS.md → python (4), go (3), dotnet (3), js-ts (3), java (2)
-  //
-  // Shared (9 agents):
-  //   - shared/AGENTS.md → code-review (4), documentation (1), reporting (1), devops (3)
-  //
-  // Infrastructure (6 agents) - NEW:
-  //   - infrastructure/AGENTS.md → iac (2), kubernetes (2), cloud (2)
-  //
-  // Security (3 agents) - NEW:
-  //   - security/AGENTS.md → secrets (1), compliance (1), scanning (1)
-  //
-  // Shared (9 agents):
-  //   - shared/AGENTS.md → code-review (4), documentation (1), reporting (1), devops (3)
+  // ═══════════════════════════════════════════════════════════════════════
+  // ✅ TOTAL: 49 AGENTS (12 QA + 17 Dev + 9 Shared + 6 Infrastructure + 3 Security + 2 System)
+  // ═══════════════════════════════════════════════════════════════════════
   //
   // Infrastructure (6 agents - Planned):
   //   - infrastructure/AGENTS.md → iac (2), kubernetes (2), cloud-deploy (2)

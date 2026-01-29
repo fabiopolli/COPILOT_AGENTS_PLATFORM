@@ -3,7 +3,7 @@
 **Data:** 29/01/2026  
 **Versão do Projeto:** 1.0 (Public Release - Community-Driven)  
 **Versão do Sistema:** 3.2 (Multi-Agent Platform - QA + Dev + Shared + Infrastructure + Security)  
-**Total de Agents Planejados:** 48 agents em 6 categorias (37 v2.1 implemented + 11 planned)
+**Total de Agents Planejados:** 49 agents em 6 categorias (37 v2.1 implemented + 12 planned)
 
 ---
 
@@ -11,10 +11,10 @@
 
 O projeto implementa um **sistema multi-agent profissional** para automação de testes (QA), desenvolvimento de software (Dev) e operações (DevOps/Shared), com arquitetura reorganizada em **6 categorias por papel** (QA, Dev, Shared, Infrastructure, Security, System). Novo **Specification Agent** gera PRD/Architecture automaticamente. A arquitetura utiliza o padrão **AGENTS.md** do VS Code para carregamento contextual automático.
 
-### Métricas do Sistema (v2.1)
-- **48 agents total** (37 v2.1 implementados + 11 planejados)
-  - QA: 11 agents (migração 7, estratégia 2, frameworks 2)
-  - Dev: 14 agents (Python 4, Go 3, .NET 3, JS/TS 3, Java 2, Generic 1)
+### Métricas do Sistema (v2.1 FINAL - Validação Real)
+- **49 agents total** (37 v2.1 implementados + 12 planejados)
+  - QA: 12 agents (migração 7, estratégia 2, frameworks 2, scaffold 1)
+  - Dev: 17 agents (Python 4, Go 3, .NET 3, JS/TS 3, Java 2, Generic 2)
   - Shared: 9 agents (code review 4, documentação 1, reporting 1, DevOps 3)
   - Infrastructure: 6 agents (Terraform, Bicep, Kubernetes x2, Azure, AWS)
   - Security: 3 agents (Secrets, Compliance, Scanning)

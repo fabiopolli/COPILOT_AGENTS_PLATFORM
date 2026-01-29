@@ -41,9 +41,9 @@
 
 | Item | Valor |
 |------|-------|
-| **Total de Agents Ativos** | 37 (11 QA + 14 Dev + 9 Shared + 2 System + 6 Infrastructure + 3 Security) |
-| **Agents Planejados** | +11 (frameworks, test generation, advanced testing) |
-| **Total Potencial** | 48 agents (v3.0 roadmap) |
+| **Total de Agents Ativos** | 37 (12 QA + 17 Dev + 9 Shared + 2 System + 6 Infrastructure + 3 Security) |
+| **Agents Planejados** | +12 (frameworks, test generation, advanced testing) |
+| **Total Potencial** | 49 agents (v3.0 roadmap) |
 | **Categorias** | 6 (qa, dev, shared, infrastructure, security, system) - **ALL LIVE** |
 | **Linguagens** | 5 (Python, Go, .NET, JS/TS, Java/Generic) |
 | **Keywords Auto-Activation** | 200+ |
