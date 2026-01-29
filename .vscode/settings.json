@@ -1,0 +1,61 @@
+{
+  // ============================================================
+  // 🎯 AGENTS.md AUTO-LOADING (Padrão Microsoft - Recomendado)
+  // ============================================================
+  // Ativa suporte a AGENTS.md por pasta (carga automática por contexto)
+  "chat.useAgentsMdFile": true,
+  "chat.useNestedAgentsMdFiles": true,
+
+  // ============================================================
+  // 💬 BASE INSTRUCTIONS (Sempre Ativas)
+  // ============================================================
+  // 2 agents base: Core Platform + Universal Helper (detector inteligente)
+  // Todos demais agents carregam via AGENTS.md conforme contexto
+  "github.copilot.chat.codeGeneration.instructions": [
+    {
+      "file": ".github/copilot-instructions.md",
+      "description": "📚 Instruções gerais do sistema Copilot Agents Platform"
+    },
+    {
+      "file": ".github/agents/universal-helper/agent-prompt.md",
+      "description": "🎯 Universal Helper - Semantic intent detection, carrega AGENTS.md via #file automaticamente"
+    }
+  ],
+
+  // ============================================================
+  // 🔍 CODE REVIEW (Auto-Load via Selection)
+  // ============================================================
+  "github.copilot.chat.reviewSelection.instructions": [
+    {
+      "file": ".github/agents/shared/AGENTS.md",
+      "description": "👁️ Shared Agents - Code Review Pack (4 agents + others)"
+    }
+  ],
+
+  // ============================================================
+  // 📦 AGENTS DISPONÍVEIS - CARREGAMENTO AUTOMÁTICO v2.1
+  // ============================================================
+  // ATIVAÇÃO AUTOMÁTICA: Os agents abaixo carregam via AGENTS.md 
+  // quando usuário menciona palavras-chave ou via context do arquivo
+  //
+  // System (SEMPRE ATIVO):
+  //   - universal-helper/agent-prompt.md (detector semântico de intenção)
+  //   - specification/agent-prompt.md (PRD + ADD generation - novo!)
+  //
+  // QA (11 agents):
+  //   - qa/AGENTS.md → migration (7), test-strategy (2), frameworks (2), scaffold (1)
+  //
+  // Dev (16+ agents):
+  //   - dev/AGENTS.md → python (4), go (3), dotnet (3), js-ts (3), java (2), generic (2)
+  //
+  // Shared (9 agents):
+  //   - shared/AGENTS.md → code-review (4), documentation (1), reporting (1), devops (3)
+  //
+  // Infrastructure (6 agents - Planned):
+  //   - infrastructure/AGENTS.md → iac (2), kubernetes (2), cloud-deploy (2)
+  //
+  // Security (3 agents - Planned):
+  //   - security/AGENTS.md → secrets (1), compliance (1), scanning (1)
+  //
+  // TOTAL: 2 (system) + 11 (qa) + 16+ (dev) + 9 (shared) + 6 (infra) + 3 (security) = 47+
+}

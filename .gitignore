@@ -1,0 +1,65 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+ENV/
+*.pyc
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+dist/
+build/
+
+# IDE & Editor
+.idea/
+.vscode/settings.local.json
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Credentials & Environment
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+*.crt
+
+# Cache
+.cache/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# OS
+.DS_Store
+.AppleDouble
+.LSOverride
+desktop.ini
+
+# Logs
+*.log
+logs/
+
+# Test results
+test-results/
+coverage/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# IDE specific
+.classpath
+.project
+.settings/
+*.sublime-project
+*.sublime-workspace

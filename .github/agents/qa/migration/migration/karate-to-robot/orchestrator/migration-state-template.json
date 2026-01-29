@@ -1,0 +1,195 @@
+{
+  "migration_id": "",
+  "project_name": "",
+  "source_path": "",
+  "output_path": "",
+  "execution_mode": "INTERACTIVE",
+  "status": "NOT_STARTED",
+  "started_at": "",
+  "last_updated": "",
+  "completed_at": "",
+  
+  "current_phase": {
+    "number": 0,
+    "name": "Pre-Migration Analysis",
+    "status": "PENDING"
+  },
+  
+  "current_step": {
+    "number": 0,
+    "name": "Project Analysis",
+    "status": "PENDING",
+    "started_at": "",
+    "completed_at": "",
+    "errors": []
+  },
+  
+  "phases": {
+    "phase_0": {
+      "name": "Pre-Migration Analysis",
+      "status": "PENDING",
+      "steps": {
+        "step_0": {
+          "name": "Project Analysis",
+          "status": "PENDING",
+          "output_files": [],
+          "errors": [],
+          "timestamp": ""
+        }
+      }
+    },
+    "phase_1": {
+      "name": "Foundation Setup",
+      "status": "PENDING",
+      "checkpoint": 1,
+      "checkpoint_confirmed": false,
+      "steps": {
+        "step_1": {
+          "name": "Dependency Mapper Agent",
+          "status": "PENDING",
+          "output_files": ["requirements.txt"],
+          "errors": [],
+          "timestamp": ""
+        },
+        "step_2": {
+          "name": "Environment Configuration Agent",
+          "status": "PENDING",
+          "output_files": [
+            "config/common.robot",
+            "config/staging.robot",
+            "config/preprod.robot",
+            "config/prod.robot"
+          ],
+          "errors": [],
+          "timestamp": ""
+        }
+      }
+    },
+    "phase_2": {
+      "name": "Test Architecture Design",
+      "status": "PENDING",
+      "checkpoint": 2,
+      "checkpoint_confirmed": false,
+      "steps": {
+        "step_3": {
+          "name": "API Endpoint Mapper Agent",
+          "status": "PENDING",
+          "output_files": ["docs/API_ENDPOINTS.md"],
+          "errors": [],
+          "timestamp": ""
+        },
+        "step_4": {
+          "name": "Keyword Library Designer Agent",
+          "status": "PENDING",
+          "output_files": [
+            "resources/common_keywords.robot",
+            "resources/job_keywords.robot",
+            "libraries/APIHelpers.py"
+          ],
+          "errors": [],
+          "timestamp": ""
+        },
+        "step_5": {
+          "name": "Test Strategy Agent",
+          "status": "PENDING",
+          "output_files": ["docs/TEST_STRATEGY.md"],
+          "errors": [],
+          "timestamp": ""
+        }
+      }
+    },
+    "phase_3": {
+      "name": "Test Migration",
+      "status": "PENDING",
+      "checkpoint": 3,
+      "checkpoint_confirmed": false,
+      "steps": {
+        "step_6": {
+          "name": "Migration Agent",
+          "status": "PENDING",
+          "output_files": [
+            "tests/get_requests.robot",
+            "tests/post_requests.robot",
+            "tests/patch_requests.robot",
+            "tests/delete_requests.robot",
+            "tests/query_parameters.robot",
+            "tests/response_validation.robot"
+          ],
+          "conversion_stats": {
+            "features_analyzed": 0,
+            "test_cases_created": 0,
+            "keywords_used": 0
+          },
+          "errors": [],
+          "timestamp": ""
+        },
+        "step_7": {
+          "name": "Assertion Converter Agent",
+          "status": "PENDING",
+          "output_files": ["tests/*.robot (updated)"],
+          "assertions_converted": 0,
+          "errors": [],
+          "timestamp": ""
+        }
+      }
+    },
+    "phase_4": {
+      "name": "Documentation & Finalization",
+      "status": "PENDING",
+      "checkpoint": 4,
+      "checkpoint_confirmed": false,
+      "steps": {
+        "step_8": {
+          "name": "Documentation Agent",
+          "status": "PENDING",
+          "output_files": [
+            "docs/MIGRATION_REPORT.md",
+            "docs/SETUP_GUIDE.md",
+            "docs/KEYWORD_REFERENCE.md",
+            "docs/TEST_STRATEGY.md",
+            "docs/API_ENDPOINTS.md",
+            "README.md"
+          ],
+          "errors": [],
+          "timestamp": ""
+        },
+        "step_9": {
+          "name": "Final Validation",
+          "status": "PENDING",
+          "validation_results": {
+            "all_files_generated": false,
+            "dependencies_complete": false,
+            "documentation_complete": false,
+            "smoke_tests_ready": false
+          },
+          "errors": [],
+          "timestamp": ""
+        }
+      }
+    }
+  },
+  
+  "files_generated": [],
+  
+  "errors": [],
+  
+  "warnings": [],
+  
+  "statistics": {
+    "total_steps": 9,
+    "completed_steps": 0,
+    "failed_steps": 0,
+    "skipped_steps": 0,
+    "total_files_generated": 0,
+    "total_errors": 0,
+    "total_warnings": 0
+  },
+  
+  "recovery_info": {
+    "can_resume": false,
+    "resume_from_phase": 0,
+    "resume_from_step": 0,
+    "last_successful_step": "",
+    "recovery_instructions": ""
+  }
+}

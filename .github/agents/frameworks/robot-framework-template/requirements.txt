@@ -1,0 +1,9 @@
+robotframework>=7.0
+robotframework-requests>=0.9.5
+robotframework-jsonlibrary>=0.5
+robotframework-seleniumlibrary>=6.0.0
+requests>=2.31.0
+jsonschema>=4.20.0
+cryptography>=41.0.0
+allure-robotframework>=2.13.2
+pabot>=2.16.0
