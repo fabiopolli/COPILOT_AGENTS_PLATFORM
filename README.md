@@ -255,6 +255,6 @@ Contact privately: **fabiopolli@outlook.com** or via [LinkedIn](https://www.link
 
 **Contributing**: Quer adicionar novos agents? Expandir CI/CD, Frameworks ou MCPs?
 
-[📖 Leia CONTRIBUTING.md](https://www.google.com/search?q=CONTRIBUTING.md) para templates e padrões de PR.
+[📖 Leia CONTRIBUTING.md](https://github.com/fabiopolli/COPILOT_AGENTS_PLATFORM/blob/main/CONTRIBUTING.md) para templates e padrões de PR.
 
 **Version**: 2.1 Final | **Author**: Fábio Polli | **Year**: 2026
