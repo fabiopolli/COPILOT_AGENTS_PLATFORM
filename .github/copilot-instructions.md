@@ -9,7 +9,7 @@
 
 **IMPORTANTE:** Este sistema detecta sua intenção e carrega agents automaticamente via contexto.
 
-### Arquitetura v2.1 (39 Agents - 6 Categorias)
+### Arquitetura v2.1 (37 Active + 11 Planned = 48 Total - 6 Categorias ALL LIVE)
 
 Quando o usuário menciona estas palavras-chave, VOCÊ DEVE carregar os agents correspondentes usando comandos `#file`:
 
@@ -107,7 +107,7 @@ Quando o usuário menciona estas palavras-chave, VOCÊ DEVE carregar os agents c
 
 **Action:** Carregar agents de documentação:
 ```
-#file .github/agents/documentation/AGENTS.md
+#file .github/agents/shared/documentation/AGENTS.md
 ```
 
 **Agents inclusos:**
@@ -117,6 +117,42 @@ Quando o usuário menciona estas palavras-chave, VOCÊ DEVE carregar os agents c
 **Exemplo de uso:**
 - User: "Gerar README do projeto"
 - Assistant: [PRIMEIRO carrega documentation/AGENTS.md via #file, DEPOIS gera]
+
+#### 🏗️ **Infrastructure**
+**Triggers**: "terraform", "kubernetes", "k8s", "azure", "aws", "gcp", "bicep", "helm", "infra", "infrastructure as code", "iac"
+
+**Action:** Carregar agents de infraestrutura:
+```
+#file .github/agents/infrastructure/AGENTS.md
+```
+
+**Agents inclusos:**
+- Terraform Specialist (IaC generation)
+- Bicep/ARM Specialist (Azure infrastructure)
+- Kubernetes Manifest (K8s deployments)
+- Helm Chart Specialist (package management)
+- Cloud Deployment Agents (Azure, AWS)
+
+**Exemplo de uso:**
+- User: "Criar terraform para Azure App Service"
+- Assistant: [PRIMEIRO carrega infrastructure/AGENTS.md via #file, DEPOIS gera]
+
+#### 🔐 **Security**
+**Triggers**: "secrets", "vault", "compliance", "vulnerability", "scanning", "sast", "segurança", "gdpr", "cve", "credentials", "security"
+
+**Action:** Carregar agents de segurança:
+```
+#file .github/agents/security/AGENTS.md
+```
+
+**Agents inclusos:**
+- Secrets Management (Key Vault, Vault, HashiCorp)
+- Compliance Checker (GDPR, SOC2, PCI-DSS)
+- Vulnerability Scanner (SAST, CVEs, Secrets)
+
+**Exemplo de uso:**
+- User: "Escanear vulnerabilidades do código"
+- Assistant: [PRIMEIRO carrega security/AGENTS.md via #file, DEPOIS escaneia]
 
 ---
 

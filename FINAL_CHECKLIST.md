@@ -41,13 +41,15 @@
 
 | Item | Valor |
 |------|-------|
-| **Total de Agents** | 35 (9 QA + 14 Dev + 8 Shared + 2 System + 2 Planned) |
-| **Categorias** | 6 (qa, dev, shared, infrastructure, security, system) |
+| **Total de Agents Ativos** | 37 (11 QA + 14 Dev + 9 Shared + 2 System + 6 Infrastructure + 3 Security) |
+| **Agents Planejados** | +11 (frameworks, test generation, advanced testing) |
+| **Total Potencial** | 48 agents (v3.0 roadmap) |
+| **Categorias** | 6 (qa, dev, shared, infrastructure, security, system) - **ALL LIVE** |
 | **Linguagens** | 5 (Python, Go, .NET, JS/TS, Java/Generic) |
 | **Keywords Auto-Activation** | 200+ |
-| **Linhas de Documentação** | 15.000+ |
-| **Commits desta Sessão** | 5 (reorganização, dev agents, session, docs rebrand, cleanup) |
-| **Status** | ✅ Production Ready v2.1 |
+| **Linhas de Documentação** | 20.000+ |
+| **Commits desta Sessão** | 6 (reorganização, dev agents, infrastructure, security, session, cleanup) |
+| **Status** | ✅ Production Ready v2.1 - ALL CATEGORIES LIVE |
 
 ---
 

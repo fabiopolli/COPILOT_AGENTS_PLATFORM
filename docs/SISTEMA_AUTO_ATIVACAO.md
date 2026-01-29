@@ -1,9 +1,10 @@
 # 📖 Sistema de Auto-Ativação de Agents v2.1 - Copilot Agents Platform
 
 **Data:** 29 de janeiro de 2026  
-**Status:** ✅ v2.1 - Multi-Agent Platform (QA, Dev, Shared + Planejado: Infrastructure, Security)  
-**Agents Atuais:** 39 integrados (11 QA + 16+ Dev + 9 Shared + 2 System)  
-**Agents Planejados:** 47+ (com Infrastructure, Security e expansões futuras)  
+**Status:** ✅ v2.1 - Multi-Agent Platform (QA, Dev, Shared, Infrastructure, Security, System) - **ALL LIVE**  
+**Agents Atuais:** 37 implementados (11 QA + 14 Dev + 9 Shared + 2 System + 6 Infrastructure + 3 Security)  
+**Agents Planejados:** +11 (frameworks expansion, test generation, advanced testing)  
+**Total Potencial:** 48 agents (roadmap v3.0)  
 **Local:** Reorganizado em `.github/agents/` com 6 categorias profissionais
 
 ---
@@ -79,24 +80,24 @@ Agents:
   └── DevOps (3): CI/CD Validator, Templates, Setup
 ```
 
-#### 4. 🏗️ **Infrastructure Agents** (6 - Planejado)
+#### 4. 🏗️ **Infrastructure Agents** (6 - LIVE)
 **Local:** `.github/agents/infrastructure/`
 
 ```
-Status: 🔜 Planejado v1.5 Q2 2026
-Triggers: "terraform", "kubernetes", "azure", "aws", "gcp"
+Status: ✅ v2.1 Production Ready
+Triggers: "terraform", "kubernetes", "k8s", "azure", "aws", "gcp", "bicep", "helm", "infra"
 Agents:
-  ├── IaC (2): Terraform, Bicep
-  ├── Kubernetes (2): Manifests, Helm
-  └── Cloud (2): Azure, AWS
+  ├── IaC (2): Terraform, Bicep/ARM
+  ├── Kubernetes (2): Manifests, Helm Charts
+  └── Cloud (2): Azure Deployment, AWS Deployment
 ```
 
-#### 5. 🔐 **Security Agents** (3 - Planejado)
+#### 5. 🔐 **Security Agents** (3 - LIVE)
 **Local:** `.github/agents/security/`
 
 ```
-Status: 🔜 Planejado v1.5 Q2 2026
-Triggers: "secrets", "compliance", "vulnerability", "scanning"
+Status: ✅ v2.1 Production Ready
+Triggers: "secrets", "vault", "compliance", "vulnerability", "scanning", "sast", "segurança", "gdpr", "cve"
 Agents:
   ├── Secrets (1): Key Vault, Vault, Secrets Manager
   ├── Compliance (1): GDPR, SOC2, PCI-DSS

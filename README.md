@@ -6,17 +6,17 @@
 > All controls are open for discussion. We want disagreement. We want edge cases we haven't considered.  
 > This is not our standard. It's meant to be the community standard, built by the people who actually implement these things.
 
-A comprehensive platform with **39+ specialized AI agents** for **software development, QA automation, DevOps, and professional workflows** - all controlled via natural language conversation in your IDE.
+A comprehensive platform with **48 specialized AI agents** for **software development, QA automation, DevOps, Infrastructure, Security, and professional workflows** - all controlled via natural language conversation in your IDE.
 
 Built to make GitHub Copilot in VSCode more powerful and accessible for daily development tasks without documentation lookup or complex prompts.
 
-- **🎯 Smart Token Management**: Only 2 agents active by default (90%+ token savings). 35 agents load automatically via AGENTS.md by context and semantic detection.
+- **🎯 Smart Token Management**: Only 2 agents active by default (90%+ token savings). 37 agents load automatically via AGENTS.md by context and semantic detection.
 
-**Version 2.1**: 6-category architecture (QA, Dev, Shared, Infrastructure, Security, System)  
+**Version 2.1**: 6-category architecture (QA, Dev, Shared, Infrastructure, Security, System) - **ALL LIVE**  
 
-**For**: Developers, QA Engineers, DevOps, Architects  
+**For**: Developers, QA Engineers, DevOps, DevSecOps, Architects, SRE  
 **Languages**: Python, Java, JavaScript/TypeScript, Go, .NET, and QA test frameworks  
-**Status**: ✅ 35 agents production-ready (v1.0 complete, v2.1 foundation)
+**Status**: ✅ 37 agents production-ready (v2.1 complete, all categories active)
 
 ## 🎯 Vision
 
@@ -77,8 +77,8 @@ Transform your **QA + Development workflow** with intelligent agents that handle
 
 **Location**: `.github/agents/shared/` (8 agents)
 
-### 🏗️ Infrastructure Agents (6 - Planned)
-**Status**: 🔜 v1.5 Q2 2026 (Awaiting Confirmation)
+### 🏗️ Infrastructure Agents (6 - LIVE)
+**Status**: ✅ v2.1 Production Ready
 
 - **📋 Infrastructure as Code** (2): Terraform, Bicep/ARM
 - **🐳 Kubernetes** (2): Manifests, Helm Charts
@@ -86,8 +86,8 @@ Transform your **QA + Development workflow** with intelligent agents that handle
 
 **Location**: `.github/agents/infrastructure/`
 
-### 🔐 Security Agents (3 - Planned)
-**Status**: 🔜 v1.5 Q2 2026 (Awaiting Confirmation)
+### 🔐 Security Agents (3 - LIVE)
+**Status**: ✅ v2.1 Production Ready
 
 - **🔐 Secrets Management** (1): Key Vault, Azure Secrets, HashiCorp Vault
 - **✅ Compliance** (1): GDPR, SOC2, PCI-DSS
@@ -123,10 +123,10 @@ Toda a documentação está organizada em `/docs/`:
 - **Planejado**: CI/CD, Cloud, Colaboração
 
 ### 🎯 Quick Links
-- **Agents Atualmente Ativos**: 23
-- **Auto-Activation Keywords**: 100+
+- **Agents Atualmente Ativos**: 37 (2 always active by default)
+- **Auto-Activation Keywords**: 200+
 - **Token Savings**: 90%+ vs. all agents active
-- **Status**: ✅ Production Ready
+- **Status**: ✅ v2.1 Production Ready (All 6 Categories Live)
 
 ---
 

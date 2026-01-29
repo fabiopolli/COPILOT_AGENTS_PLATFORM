@@ -11,12 +11,12 @@
 #### Passo 1: Escolha uma Categoria
 ```
 .github/agents/
-├── development/          ← Para dev features
-├── ci-cd/               ← Para pipelines (Jenkins, GitHub, etc)
-├── test-generation/     ← Para gerar testes
-├── test-management/     ← Para estratégia e BDD
-├── test-data/          ← Para dados de teste
-└── frameworks/         ← Para templates de frameworks
+├── qa/                 ← Para QA (migração, estratégia, frameworks)
+├── dev/                ← Para desenvolvimento (Python, Go, .NET, JS/TS, Java)
+├── shared/             ← Para QA+Dev (code review, docs, devops, reporting)
+├── infrastructure/     ← Para IaC, Kubernetes, Cloud (Terraform, Bicep, K8s)
+├── security/           ← Para segurança (secrets, compliance, scanning)
+└── system/             ← Para sistema (universal-helper, specification)
 ```
 
 #### Passo 2: Crie a Pasta e Arquivo
